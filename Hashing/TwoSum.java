@@ -25,7 +25,7 @@ public class TwoSum{
                 result.set(1, i + 1);
                 break;
             }
-            else{
+            else if(!map.containsKey(b-a.get(i))){
                 map.put(b - a.get(i), i);
             }
         }
